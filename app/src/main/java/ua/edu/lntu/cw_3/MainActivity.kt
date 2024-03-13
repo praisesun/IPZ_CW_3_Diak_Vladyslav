@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import ua.edu.lntu.cw_3.ui.theme.PZ_CW_3_Diak_VladyslavTheme
@@ -41,12 +42,13 @@ fun Screen(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .background(Color.White)
     ) {
-
+        Text(
+            text = "30 Days of activities",
+            modifier = modifier.fillMaxSize(),
+            textAlign = TextAlign.Center,
+            style = TextStyle(fontSize = 30.sp, color = Color.Black)
+        )
     }
-    Text(
-        text = "30 Days of different activities",
-        modifier = modifier, style = TextStyle(fontSize = 32.sp, color = Color.Black)
-    )
 }
 
 @Preview(showBackground = true)
